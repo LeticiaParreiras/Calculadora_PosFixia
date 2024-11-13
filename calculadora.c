@@ -52,7 +52,7 @@ float getValor(char *Str) {
                 case '/':
                     if (op2 == 0) {
                         printf("\nERRO: Nao e possivel dividir por zero\n");
-                        return(0);
+                        return(-1);
                     }
                     P.Valores[P.Topo] = op1 / op2;
                     break;
@@ -68,7 +68,7 @@ float getValor(char *Str) {
             if (strcmp(token, "raiz") == 0) {
                 if (op < 0) {
                     printf("\nERRO: Nao e possivel calcular raiz negativa\n");
-                    return(0);
+                    return(-1);
                 }
                 P.Valores[P.Topo] = sqrt(op);
             } else if (strcmp(token, "sen") == 0) {

@@ -10,14 +10,14 @@ int main() {
     
     // Declara e inicializa as expressões a serem testadas
     char *expressoes[] = {
-        
-        "15 7 1 1 + - / 3 * 2 1 1 + + -",
+        "9 5 2 8 * 4 + * +",
+        "2 3 + log 5 /",
+        "45 60 + 30 cos *",
+        "10 0 /",
         "-4 raiz",
-        "45 sen 60 cos + 2 *",
-        "90 2 / sen 2 ^ 4 +",
-        "100 25 5 / - 10 log +",
-        "-7.5 3 -5 + * 2 -"
-
+        "100.5 50.25 - 2.5 /",
+        "0.15 -0.20 + 3 *",
+        "9 raiz 5 - 60 cos *",
     };
 
     int numExpressoes = sizeof(expressoes) / sizeof(expressoes[0]);
@@ -43,7 +43,8 @@ int main() {
         // Exibe o resultado
         printf("Expressao %d:\n", i + 1);
         printf("Pos-Fixa: %s\n", E[i].posFixa);
-        printf("In-Fixa: %s = %.2f\n\n", E[i].inFixa, E[i].Valor);
+        printf("In-Fixa: %s\n", E[i].inFixa);
+        printf("Total: %.2f\n\n", E[i].Valor);
 
         // Libera a memória alocada
         free(infixa);
