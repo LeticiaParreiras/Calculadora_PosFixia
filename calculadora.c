@@ -80,6 +80,7 @@ float getValor(char *Str) {
             } else if (strcmp(token, "log") == 0) {
                 if(op <= 0){
                     printf("\nERRO: Para calcular log precisa ser maior que zero");
+                    return(-1);
                 }
                 P.Valores[P.Topo] = log10(op);
             }
