@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <math.h>
 
-#define TAM_MAX 100
+#define TAM_MAX 200
 
 typedef struct Pilha
 {
