@@ -78,12 +78,17 @@ float getValor(char *Str) {
             } else if (strcmp(token, "tg") == 0) {
                 P.Valores[P.Topo] = tan(ConversorRad(op));
             } else if (strcmp(token, "log") == 0) {
+                if(op <= 0){
+                    printf("\nERRO: Para calcular log precisa ser maior que zero");
+                }
                 P.Valores[P.Topo] = log10(op);
             }
+        }else{
+            printf("\nERRO: Operador invalido\n");
+            return(-1);
         }
         token = strtok(NULL, " ");
     }
-
     return P.Valores[P.Topo];
 }
 
@@ -96,7 +101,6 @@ char *getFormaInFixa(char *Str) {
     while (token != NULL) {
         if (isdigit(token[0]) || (token[0] == '-' && isdigit(token[1])) || token[0] == '.') {
             P.Topo++;
-            P.Valores[P.Topo] = atof(token);
             sprintf(P.Expressao[P.Topo], "%s", token);
             
         } else if (OperadorB(token[0])) {
