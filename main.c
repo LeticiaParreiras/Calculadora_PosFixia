@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "calculadora.h"
 
-#define TAM_MAX 200
+#define TAM_MAX 512
 
 int main() {
 
