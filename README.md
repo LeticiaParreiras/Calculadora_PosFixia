@@ -76,10 +76,3 @@ Converte uma expressão pós-fixada para a notação infixa:
    Atualmente utiliza `float`, o que pode limitar a precisão com números muito grandes ou pequenos. O uso de `double` é recomendado para maior precisão.
 
 ---
-
-## Como Contribuir
-
-1. Faça um fork do repositório.
-2. Crie uma branch para suas alterações:
-   ```bash
-   git checkout -b minha-feature
