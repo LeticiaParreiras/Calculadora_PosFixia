@@ -6,8 +6,6 @@ Este repositório contém a implementação de uma calculadora que avalia expres
 
 A notação pós-fixada elimina a necessidade de parênteses para definir a ordem das operações, o que simplifica o cálculo e a manipulação de expressões matemáticas.
 
-Repositório: [Calculadora_PosFixia](https://github.com/LeticiaParreiras/Calculadora_PosFixia)
-
 ---
 
 ## Implementação
