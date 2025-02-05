@@ -1,12 +1,6 @@
 # Calculadora Pós-Fixada
+Esse código implementa uma calculadora para avaliar expressões matemáticas na notação pós-fixada (também conhecida como notação polonesa reversa) e converter essas expressões para a notação infixa correspondente.
 
-## Introdução
-
-Este repositório contém a implementação de uma calculadora que avalia expressões matemáticas em **notação pós-fixada** (notação polonesa reversa) e converte essas expressões para a **notação infixa** correspondente. 
-
-A notação pós-fixada elimina a necessidade de parênteses para definir a ordem das operações, o que simplifica o cálculo e a manipulação de expressões matemáticas.
-
----
 
 ## Implementação
 
@@ -74,3 +68,21 @@ Converte uma expressão pós-fixada para a notação infixa:
    Atualmente utiliza `float`, o que pode limitar a precisão com números muito grandes ou pequenos. O uso de `double` é recomendado para maior precisão.
 
 ---
+## Como Usar
+
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/LeticiaParreiras/Calculadora_PosFixia.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd Calculadora_PosFixia
+    ```
+3. Compile o código:
+    ```sh
+    gcc -o calculadora main.c
+    ```
+4. Execute a calculadora:
+    ```sh
+    ./calculadora
+    ```
